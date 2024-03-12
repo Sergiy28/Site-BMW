@@ -1,8 +1,10 @@
 body {
     background-color: #0D0B0E;
+    margin: 0;
 }
 .container {
     max-width: 1920px;
+    margin: 0 auto;
 }
 .header {
     display: flex;
@@ -66,7 +68,7 @@ body {
     width: 960px;
     height: 620px;
 }
-.content {
+.content-center {
     font-family: 'Times New Roman', Times, serif;
     width: 50%;
     color: #F1E0CB;
@@ -95,4 +97,190 @@ body {
     font-size: 18px;
     line-height: 27px;
     cursor: pointer;
+}
+.wrapper {
+    display: flex;
+ 
+}
+.section {
+    background-color:#FFFFFF;
+    padding: 45px 0 0 32px;
+}
+.section-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0D0B0E;
+    width: 20%;
+    font-size: 32px;
+    line-height: 48px;
+}
+.about {
+    max-width: 35%;
+ 
+}
+.about-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color:#0D0B0E; 
+}
+.about-content {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 26px;
+    color:#214B64;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+.slogan {
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+   color: #F9F3EA;
+}
+.moto {
+    vertical-align: bottom;
+}
+.models {
+    display: flex;
+    width: 85%;
+    flex-wrap: wrap;
+     gap: 40px;
+}
+.models-item {
+    background-color:#F9F3EA;
+    width: calc(100% / 3 - 40px) ;
+    position: relative;
+}
+.models-item_info{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+.models-item_price {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.models-item_tag {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #FF595A;
+    padding: 5px 15px;
+}
+.models-item_image {
+    text-align: center;
+}
+.models-item_content {
+    padding: 0 24px 24px 24px;
+}
+.models-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.models-item_desc {
+    font-family: 'Times New Roman', Times, serif;
+    color:#214B64;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 7px;
+}
+.section_two {
+    padding-bottom: 45px;
+}
+.section-titles {
+    width: 100%;
+    text-align: center;
+}
+.podcast-text {
+    margin: 20px auto 32px auto;
+    max-width: 600px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 26px;
+    color: #214B64;
+}
+.podcast-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 835px;
+    margin: 0 auto;
+    gap: 32px;
+}
+.podcast-tab {
+    padding: 8px 48px;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: #F1E0CB;
+    color:#0D0B0E;
+    list-style-type: none;
+    cursor: pointer;
+}
+.podcast-tab:hover {
+    background-color: #FF595A;
+    color: #F1E0CB;
+    transition: 0.6s;
+}
+.podcast-info {
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% / 3);
+}
+.podcast-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D0B0E;
+}
+.podcast-time {
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 26px;
+    color:#0D0B0E80;
+}
+.podcast-desc {
+    max-width: 440px;
+    margin: 16px 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    color: #214B64;
+}
+.podcast-socials {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 26px;
+    color:#0D0B0E80;
+    column-gap: 16px;
+}
+.podcast-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    list-style-type: none;
+    column-gap: 16px;
+}
+.podcast-content {
+    margin-top: 40px;
+    display: flex;
 }
