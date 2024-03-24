@@ -236,11 +236,14 @@ body {
     color: #F1E0CB;
     transition: 0.6s;
 }
+.podcast {
+    width: calc(100% / 4);
+}
 .podcast-info {
-    display: inline;
-    align-items: center;
+    display: flex;
     justify-content: space-between;
-    width: calc(100% / 3);
+    align-items: center;
+    width: 410px;
 }
 .podcast-title {
     font-weight: 700;
@@ -283,4 +286,5 @@ body {
 .podcast-content {
     margin-top: 40px;
     display: flex;
+    justify-content: center;
 }
