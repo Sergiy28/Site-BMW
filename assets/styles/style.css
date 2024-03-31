@@ -199,6 +199,9 @@ body {
     line-height: 18px;
     margin-top: 7px;
 }
+.section-podcast {
+    padding-bottom: 80px;
+}
 .section_two {
     padding-bottom: 45px;
 }
@@ -287,4 +290,47 @@ body {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+.section-blog {
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 4px;
+}
+.blog-item {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+.blog-item::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(226, 226, 226, 0.15);
+    backdrop-filter: blur(17.5px);
+    opacity: 0;
+}
+.blog-item :hover {
+     
+ opacity: 1;    
+}
+.blog-row {
+    display: flex;
+    margin: 4px;
+    column-gap: 4px;
+
+}
+.blog-row:nth-child(2n){
+    width: calc(50% - 2px);
+}
+.blog-item_title {
+    color: #F1E0CB;
 }
