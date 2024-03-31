@@ -2,8 +2,10 @@ body {
     background-color: #0D0B0E;
     margin: 0;
 }
-.container {
+.root {
     max-width: 1920px;
+}
+.container {
     margin: 0 auto;
 }
 .header {
@@ -48,6 +50,7 @@ body {
     line-height: 20px;
     font-weight: 600;
 }
+ 
 .header-link:hover {
     color:#d4b082;
     transition: 0.6s;
@@ -103,8 +106,9 @@ body {
  
 }
 .section {
+    max-width: 1920px;
     background-color:#FFFFFF;
-    padding: 45px 0 0 32px;
+    padding: 45px  0 0.3px;
 }
 .section-title {
     font-family: Arial, Helvetica, sans-serif;
@@ -112,6 +116,7 @@ body {
     width: 20%;
     font-size: 32px;
     line-height: 48px;
+    margin-left: 35px;
 }
 .about {
     max-width: 35%;
@@ -133,6 +138,7 @@ body {
     margin-top: 24px;
 }
 .slogan {
+   max-width: 1920px;
    font-family: Arial, Helvetica, sans-serif;
    text-align: center;
    font-weight: 700;
@@ -292,9 +298,11 @@ body {
     justify-content: center;
 }
 .section-blog {
+    max-width: 1920px;
     background-color: #FFFFFF;
     display: flex;
     gap: 4px;
+    padding-bottom: 45px;
 }
 .blog-item {
     height: 500px;
@@ -304,27 +312,9 @@ body {
     position: relative;
     cursor: pointer;
 }
-.blog-item::before{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(226, 226, 226, 0.15);
-    backdrop-filter: blur(17.5px);
-    opacity: 0;
-}
-.blog-item :hover {
-     
- opacity: 1;    
-}
 .blog-row {
     display: flex;
-    margin: 4px;
+    margin: 0 0 4px;
     column-gap: 4px;
 
 }
@@ -333,4 +323,45 @@ body {
 }
 .blog-item_title {
     color: #F1E0CB;
+}
+.blog-list_button {
+    border: none;
+    color: #F9F3EA;
+    background-color: #FF595A;
+    padding: 11px 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    cursor: pointer;
+    margin: 42px auto 0 auto;
+    display: block;
+}
+.blog-list_button:hover {
+     background-color: #c43939;
+     transition: 0.6s;  
+}
+.footer {
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0 20px ;
+}
+.footer-reserved {
+    color: #F1E0CB;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 1580px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer-company {
+    color: #F1E0CB;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 24px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 760;
+}
+.footer-logo {
+    margin-left: 15px;
 }
