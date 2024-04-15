@@ -100,6 +100,7 @@ body {
     font-size: 18px;
     line-height: 27px;
     cursor: pointer;
+    border-radius: 5px;
 }
 .wrapper {
     display: flex;
@@ -159,6 +160,7 @@ body {
     background-color:#F9F3EA;
     width: calc(100% / 3 - 40px) ;
     position: relative;
+    border-radius: 5px;
 }
 .models-item_info{
     display: flex;
@@ -184,6 +186,7 @@ body {
     color: #FFFFFF;
     background-color: #FF595A;
     padding: 5px 15px;
+    border-radius: 5px;
 }
 .models-item_image {
     text-align: center;
@@ -239,6 +242,7 @@ body {
     color:#0D0B0E;
     list-style-type: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 .podcast-tab:hover {
     background-color: #FF595A;
@@ -302,7 +306,6 @@ body {
     background-color: #FFFFFF;
     display: flex;
     gap: 4px;
-    padding-bottom: 45px;
 }
 .blog-item {
     height: 500px;
@@ -364,4 +367,118 @@ body {
 }
 .footer-logo {
     margin-left: 15px;
+}
+.blog-list_under {
+    font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  background: linear-gradient(45deg, #fff1eb, #c34e4e);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  max-width: 1920px;
+}
+.blog-list_center {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    margin: 20px;
+}
+  /* Стили левой колонки */
+  .left-side {
+    width: 20%; /* занимает 25% общей ширины */
+    height: 100%; /* растягиваем на всю высоту */
+    position: relative; /* позиционирование относительное (для ::before) */
+    display: flex;
+    flex-direction: column; /* внутри элементы располагаем в колонку */
+  }
+  
+  /* Стили разделительной линии между левой и правой колонкой */
+  .left-side::before {
+    content: ""; /* контент нам не нужен */
+    position: absolute; /* позиционируем относительно .left-side */
+    height: 70%; /* высота 70% от .left-side */
+    width: 2px; /* ширина 2px */
+    background: #afafb6;
+    right: -15px; /* позиционируем справа + отступ 15px (справа) */
+    top: 50%; /* выравниваем по центру */
+    transform: translateY(-50%); /* выравниваем по центру */
+  }
+  
+  /* Стили правой колонки */
+  .right-side {
+    margin-left: 75px;
+  }
+  
+  /* Элементы левой колонки: адрес, телефон, email */
+  .details {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .details i {
+    font-size: 25px; 
+    color: #3e2093; 
+    margin-bottom: 10px;
+  }
+  .topic {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px; 
+  }
+  .text-one,
+  .text-two {
+    font-size: 14px;
+    color: #afafb6;
+  }
+  .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #9f1212;
+    margin-bottom: 10px;
+  }
+  .right-side p {
+    margin-bottom: 20px;
+  }
+  .input-box {
+    height: 50px; 
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+  .input-box input,
+  .input-box textarea {
+    height: 90%; 
+    width: 95%;
+    border-radius: 5px; 
+    background: #f0f1f8;
+    padding: 0 20px; 
+  }
+  .input-box textarea {
+    resize: none; 
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  .message-box {
+    min-height: 110px; 
+  }
+  .blog-list_button {
+    border: none;
+    color: #F9F3EA;
+    background-color: #FF595A;
+    padding: 11px 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    cursor: pointer;
+    margin: 42px auto 0 auto;
+    display: block;
+    border-radius: 5px;
+}
+.blog-list_button:hover {
+     background-color: #c43939;
+     transition: 0.6s;  
 }
