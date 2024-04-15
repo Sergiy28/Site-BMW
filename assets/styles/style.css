@@ -389,33 +389,26 @@ body {
     box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
     margin: 20px;
 }
-  /* Стили левой колонки */
   .left-side {
-    width: 20%; /* занимает 25% общей ширины */
-    height: 100%; /* растягиваем на всю высоту */
-    position: relative; /* позиционирование относительное (для ::before) */
+    width: 20%; 
+    height: 100%;
+    position: relative; 
     display: flex;
-    flex-direction: column; /* внутри элементы располагаем в колонку */
+    flex-direction: column; 
   }
-  
-  /* Стили разделительной линии между левой и правой колонкой */
   .left-side::before {
-    content: ""; /* контент нам не нужен */
-    position: absolute; /* позиционируем относительно .left-side */
-    height: 70%; /* высота 70% от .left-side */
-    width: 2px; /* ширина 2px */
+    content: ""; 
+    position: absolute; 
+    height: 70%; 
+    width: 2px; 
     background: #afafb6;
-    right: -15px; /* позиционируем справа + отступ 15px (справа) */
-    top: 50%; /* выравниваем по центру */
-    transform: translateY(-50%); /* выравниваем по центру */
+    right: -15px; 
+    top: 50%; 
+    transform: translateY(-50%); 
   }
-  
-  /* Стили правой колонки */
   .right-side {
     margin-left: 75px;
   }
-  
-  /* Элементы левой колонки: адрес, телефон, email */
   .details {
     margin-bottom: 15px;
     text-align: center;
