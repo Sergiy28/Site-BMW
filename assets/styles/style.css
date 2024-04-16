@@ -369,7 +369,7 @@ body {
     margin-left: 15px;
 }
 .blog-list_under {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   width: 100%;
@@ -474,4 +474,18 @@ body {
 .blog-list_button:hover {
      background-color: #c43939;
      transition: 0.6s;  
+}
+.nav_img {
+    width: 700px;
+    height: 400px;
+    margin: 4px 40px 35px 40px;
+    border-radius: 5px;
+}
+.blog_text {
+    color: #9f1212;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 765;
+    margin: 40px;
+    height: 0px
 }
