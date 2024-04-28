@@ -12,19 +12,28 @@
             <header class="header">
             <img src="assets/Images/logo.png" class="logo"> 
             <nav>
-             <ul class="menu">
-             <li>
-            <a href="#" class="menu-link"> Models </a>
-                </li>
-              <li> 
-             <a href="#" class="menu-link"> Blog </a> 
-              </li>
-              <li>
-             <a href="#" class="menu-link" > Events </a>
-                 </li>
-              <li>
-              <a href="#" class="menu-link"> Podcasts </a> 
-                 </li>
+             <ul class="topmenu">
+                <li><a href="#blog" class="menu-link"> Blog </a> </li>
+             <li><a href="#model" class="menu-link"> Models </a>
+            <ul class="submenu">
+                <li><a href="#model">BMW IX</a></li>
+                <li><a href="#model">BMW 4 Series</a></li>
+                <li><a href="#model">BMW 8 Series</a></li>
+            </ul>
+            </li>
+              <li><a href="#podcat" class="menu-link"> Podcasts </a>
+                <ul class="submenu">
+                    <li><a href="#podcat">Insight</a></li>
+                    <li><a href="#podcat">Design</a></li>
+                    <li><a href="#podcat">Lifestyle</a></li>
+                    <li><a href="#podcat">Interview</a></li>
+                    <li><a href="#podcat">Innovation</a></li>
+                    <li><a href="#podcat">Perfomance</a></li>
+                    <li><a href="#podcat">Automotive Life</a></li>
+                </ul>
+            </li>
+            <li><a href="#portfolio" class="menu-link" > Portfolio </a></li>
+              <li><a href="#contact" class="menu-link"> Contacts </a></li>
                  </ul>
                     </nav>
               <a href="#" class="header-link">
@@ -46,7 +55,7 @@
                 </div>
                </div>
             </section>
-         <section class="section">
+         <section class="section" id="portfolio">
             <div class="wrapper">
        <h2 class="section-title">
         Who we are 
@@ -95,7 +104,7 @@
             <div class="wrapper">
            <h2 class="section-title"> Models </h2>
 
-           <div class="models">
+           <div class="models" id="model">
          <div class="models-item">
             <div class="models-item_info">
                 <p class="models-item_price"> From $60.000 </p>
@@ -199,7 +208,7 @@
                                 </div>
                                </section>
                                
-                        <section class="section section-podcast section_two">
+                        <section class="section section-podcast section_two"  id="podcat">
                     <h2 class="section-titles"> Listen to our podcasts </h2>
                               <p class="podcast-text">
                     "Changing Lanes” is the official podcast of BMW. Featuring new 
@@ -318,7 +327,7 @@
                  </div>
                   </div>
                     </section>
-                    <section class="section-blog">
+                    <section class="section-blog" id="blog">
                     <div class="blog-list">
                     <div class="blog-row">
                         <div class="blog-item">
@@ -330,7 +339,7 @@
                                 </div>
                                 <div class="blog-row">
                                     <div class="blog-item">
-                                        <img src="assets/Images/news4.png">
+                                        <img src="assets/Images/bmwm3.jpg">
                                       </div>
                                       <div class="blog-item">
                                         <img src="assets/Images/news3.png">
@@ -339,7 +348,7 @@
                    
                     <div class="blog-list_under">
                         <div class="blog-list_un">
-                            <h2 class="blog_text"> Where to find us? </h2>
+                            <h2 class="blog_text"> Where we are </h2>
                             <iframe class="nav_img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5242403.833258728!2d4.366367486406352!3d50.09063980836132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e7426f10c9671%3A0xf3e41200fc6d6ba4!2sBMW%20Munich!5e0!3m2!1sru!2sua!4v1713277629043!5m2!1sru!2sua"></iframe>
                             </div>
                   <div class="blog-list_center">
@@ -362,7 +371,7 @@
               <div class="text-two">admin@siteBMW.com</div>
             </div>
           </div>
-          <div class="right-side">
+          <div class="right-side" id="contact">
             <div class="topic-text">Send us a message</div>
             <p>
                 If you have any questions or suggestions for cooperation or you want to buy a car -

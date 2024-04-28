@@ -2,6 +2,7 @@ body {
     background-color: #0D0B0E;
     margin: 0;
 }
+html {scroll-behavior: smooth;}
 .root {
     max-width: 1920px;
 }
@@ -20,7 +21,6 @@ body {
 }
 .menu-link {
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
     color: #F1E0CB;
     text-decoration: none;
 }
@@ -28,12 +28,77 @@ body {
     color:#d4b082;
     transition: 0.6s;
 }
-.menu {
+nav {
+    text-align: center;
+    
+  }
+  nav ul {
     list-style: none;
-    align-items: center;
-    display: flex;
-    column-gap: 20px;
-}
+  }
+  nav a {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+  }
+  .topmenu > li {
+    display: inline-block;
+    position: relative;
+  }
+  .topmenu > li > a {
+    position: relative;
+    padding: 10px 15px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+  .topmenu > li > a:before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 100%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: .3s;
+  }
+  .topmenu li:hover a:before {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  .submenu {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 100%;
+    width: 150px;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+  }
+  .topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  .submenu a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: .3s linear;
+  }
+  .submenu a:hover {background: #e8e8e8;}
 .world {
     align-items: center;
     top: 40px;
@@ -49,6 +114,7 @@ body {
     text-decoration: none;
     line-height: 20px;
     font-weight: 600;
+    letter-spacing: 1px;
 }
  
 .header-link:hover {
@@ -72,13 +138,12 @@ body {
     height: 620px;
 }
 .content-center {
-    font-family: 'Times New Roman', Times, serif;
     width: 50%;
     color: #F1E0CB;
     height: 100%;
     align-items: center;
     white-space: nowrap;
-    
+    letter-spacing: 1px;
 }
 .text-centerr {
     font-family: Arial, Helvetica, sans-serif;
@@ -352,10 +417,11 @@ body {
 .footer-reserved {
     color: #F1E0CB;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 1580px;
+    margin-left: 1550px;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
+    letter-spacing: 1px;
 }
 .footer-company {
     color: #F1E0CB;
@@ -489,3 +555,5 @@ body {
     margin: 40px;
     height: 0px
 }
+
+  
