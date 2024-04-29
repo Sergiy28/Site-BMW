@@ -1,6 +1,6 @@
 console.log(jQuery().jquery); 
       // Submit subscription form using Ajax 
-      $('#subscription_form').on('Send message', function (e) { 
+      $('#subscription_form').on('submit', function (e) { 
           e.preventDefault();  
            var $form = $(this); 
              $.ajax({  
